@@ -27,7 +27,7 @@ ROUTES
 ================================================================*/
 router.get('/', getCustom, function (req, res, next) {
     res.render('web-app', {
-        title: 'Get a Key!',
+        title: 'Gasten-WiFi iHUB',
         corpEnabled: req.session.account.config.corpEnabled,
         guestEnabled: req.session.account.config.guestEnabled,
         custom: req.custom

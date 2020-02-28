@@ -74,7 +74,7 @@ function getDefaultAccount(req, res, next) {
 
 function displayEmptyLogin(req, res){
     res.render("login", {
-        title: 'Get a Key!',
+        title: 'Gasten-WiFi iHUB',
         oauthUrl: "https://extremecloudiq.com/thirdpartylogin?client_id=" + devAccount.clientID + "&redirect_uri=" + devAccount.redirectUrl,
         method: null
     });
@@ -86,7 +86,7 @@ function displayLogin(req, res){
     if (req.session.account.azureAd) method = "/aad/" + req.session.account._id + "/login";
     else if (req.session.account.adfs) method = "/adfs/" + req.session.account._id + "/login";
     res.render("login", {
-        title: 'Get a Key!',
+        title: 'Gasten-WiFi iHUB',
         oauthUrl: "https://extremecloudiq.com/thirdpartylogin?client_id=" + devAccount.clientID + "&redirect_uri=" + devAccount.redirectUrl,
         method: method,
         custom: req.custom

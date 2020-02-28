@@ -185,7 +185,7 @@ function getConfig(req, res, next) {
 // when user wants to display the customization preview (this will call the "getCustom" function to load custom values)
 router.get("/preview/", getCustom, getConfig, function (req, res, next) {
     res.render('web-app', {
-        title: 'Get a Key!',
+        title: 'Gasten-WiFi iHUB',
         corpEnabled: req.config.corpEnabled,
         guestEnabled: req.config.guestEnabled,
         custom: req.custom
