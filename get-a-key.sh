@@ -3,6 +3,17 @@
 # =========================================================
 # =========================================================
 #
+#            Originally created by Thomas Munzer
+#            https://github.com/tmunzer/get-a-key
+#            Edited by iHUB for personal use
+#            https://github.com/stichtingihubict/get-a-key
+#
+# =========================================================
+# =========================================================
+
+# =========================================================
+# =========================================================
+#
 #            APP CONTAINER CREATION
 #            SPECIFIC TO EACH APP
 #            !!! DO NOT CHANGE !!!
@@ -51,7 +62,7 @@ SCRIPT_CONF=`pwd`"/ah-ref-app.conf"
 SCRIPT_NAME="get-a-key"
 
 APP_NAME="get-a-key"
-APP_IMG="stichtingihubsb/get-a-key:2.0"
+APP_IMG="stichtingihubsb/get-a-key:2.0" #Points to docker app image and tag
 OAUTH_CALLBACK="/admin/oauth/reg"
 APP_CNF_LOC="/app"
 
@@ -68,7 +79,7 @@ EMAIL_SRV_ENABLE=false
 # uncomment if needed by the app
 DB_FOLDER="mongoDB"
 DB_NAME="ah-mongo"
-DB_IMG="mongo"
+DB_IMG="mongo" #Points to docker database image
 
 # =========================================================
 # NGINX server configuration
@@ -76,7 +87,7 @@ DB_IMG="mongo"
 
 NGINX_CERTS_FOLDER="certs"
 NGINX_NAME="ah-proxy"
-NGINX_IMG="jwilder/nginx-proxy"
+NGINX_IMG="jwilder/nginx-proxy" #Points to docker proxy image
 
 LETSENCRYPT_NAME="ah-letsencrypt"
 LETSENCRYPT_IMG="jrcs/letsencrypt-nginx-proxy-companion"
