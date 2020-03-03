@@ -62,7 +62,7 @@ SCRIPT_CONF=`pwd`"/ah-ref-app.conf"
 SCRIPT_NAME="get-a-key"
 
 APP_NAME="get-a-key"
-APP_IMG="stichtingihubsb/get-a-key:2.0" #Points to docker app image and tag
+APP_IMG="stichtingihubsb/get-a-key:2.1" #Points to docker app image and tag
 OAUTH_CALLBACK="/admin/oauth/reg"
 APP_CNF_LOC="/app"
 

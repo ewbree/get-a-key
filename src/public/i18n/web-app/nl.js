@@ -5,7 +5,7 @@ var nl = {
     details: "Details",
     logout: "Uitloggen",
     title: "Het aanvragen of vernieuwen van een WiFi-sleutel is een proces met één druk op de knop",
-    title_guest: "Aanvragen van een Gast WiFi Code.",
+    title_guest: "Aanvragen van een WiFi code voor gasten.",
     header: "Maar eerst moet je een paar dingen weten:",
     one: "Zakelijke laptops hebben geen sleutel nodig. Ze worden automatisch geconfigureerd om verbinding te maken met het juiste netwerk.",
     two: "Uw sleutel is van u. Deel het niet met anderen. U bent verantwoordelijk voor alle activiteiten waarbij uw sleutel wordt gebruikt.",
@@ -62,8 +62,8 @@ var nl = {
             send: "Verzenden"
         },
         sendBySms: {
-            message: "Voer uw telefoonnummer in.",            
-            phone: "Telefoonnummer",
+            message: "Voer uw mobiele telefoonnummer in.",            
+            phone: "Mobiele telefoonnummer",
             success: "SMS succesvol verzonden naar"
         }
     },
