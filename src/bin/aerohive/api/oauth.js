@@ -11,7 +11,7 @@ const qs = require("querystring");
  *  */
 module.exports.getPermanentToken = function (authCode, devAccount, callback) {
     const options = {
-        host: 'ie.extremecloudiq.com',
+        host: 'cloud.extremecloudiq.com',
         port: 443,
         path: '/services/acct/thirdparty/accesstoken?authCode='+authCode+'&redirectUri='+devAccount.redirectUrl,
         method: 'POST',
@@ -36,7 +36,7 @@ module.exports.getPermanentToken = function (authCode, devAccount, callback) {
  *  */
 module.exports.refreshToken = function (refreshToken, devAccount, callback) {
     const options = {
-        host: 'ie.extremecloudiq.com',
+        host: 'cloud.extremecloudiq.com',
         port: 443,
         path: '/services/oauth2/token',
         method: 'POST',
