@@ -36,7 +36,7 @@ module.exports.getPermanentToken = function (authCode, devAccount, callback) {
  *  */
 module.exports.refreshToken = function (refreshToken, devAccount, callback) {
     const options = {
-        host: 'cloud.extremecloudiq.com',
+        host: 'cloud.aerohive.com',
         port: 443,
         path: '/services/oauth2/token',
         method: 'POST',
